@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .hidden{
+        display: none;
+      }
+      .visible{
+        display: inline-block;
+      }
+    </style>
+    <title>BPMP</title>
+  </head>
+  <body>
+    <div id="BanCheck">
+      <span id="BanInput" class="visible ">
+        <input type="text" placeholder="SteamID64" id="SteamID"/>
+        <button id="Check_Ban">Check Ban</button>
+      </span>
+      <span id="loading" class="hidden "><span class="fa fa-gear fa-spin"></span></span>
+      <span id="result" class="hidden ">
+        <div id="SteamResult">
+
+        </div>
+        <button id="Retry">Check another user</button>
+      </span>
+    </div>
+    <div id="display">
+    </div>
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
